@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PaxfulTest</string>
+    <string name="my_jokes">My Jokes</string>
+    <string name="jokes">Jokes</string>
+    <string name="share">Share</string>
+    <string name="like">Like</string>
+    <string name="offline_mode">Offline mode</string>
+    <string name="settings">Settings</string>
+    <string name="first_name">Character firstname</string>
+    <string name="last_name">Character lastname</string>
+    <string name="delete">Delete</string>
+    <string name="add_joke">Add new joke</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="my_joke">My joke</string>
+</resources>
