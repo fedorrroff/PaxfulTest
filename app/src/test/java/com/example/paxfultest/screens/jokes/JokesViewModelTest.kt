@@ -107,29 +107,4 @@ class JokesViewModelTest {
         }
     }
 
-    @ExperimentalCoroutinesApi
-    @Test
-    fun `putLikedJokeToDb should call addJokeToFavorites from storageInteractor`() {
-        testCoroutineRule.runBlockingTest {
-            val joke = Joke(0, "a", listOf())
-            sut.putLikedJokeToDb(joke)
-            verify(storageInteractor).addJokeToFavorites(joke.toJokeObject())
-        }
-    }
-
-    @ExperimentalCoroutinesApi
-    @Test
-    fun `deleteJoke should call deleteJoke from storageInteractor`() {
-        testCoroutineRule.runBlockingTest {
-            val id = 0
-            sut.deleteJoke(id)
-            verify(storageInteractor).deleteJoke(id)
-        }
-    }
-
-    @After
-    fun tearDown() {
-        reset(storageInteractor)
-    }
-
 }
